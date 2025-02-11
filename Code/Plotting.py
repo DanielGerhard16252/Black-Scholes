@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from Getting_Data import get_data
-from Testing import test_function
+from Data_Scaling_and_Experimentation import test_function
 
 # Fetch and process data
 data = test_function(get_data())
