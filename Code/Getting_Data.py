@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 # The companies we want to get stock market data for
 
 def get_data():
-    tickers = ['NVDA', 'AAPL', 'TSM', 'AVGO', 'TSLA', 'GOOG', 'ASML']
+    tickers = ['NVDA']
     
     data_daily = np.array([])
     for each in tickers:
 
-        # Getting the hourly open price for the last year
+        # Getting the daily open price for the last two years
         req = yf.Ticker(each)
         data = req.history(period = '2y', interval = '1d')['Open']
 
